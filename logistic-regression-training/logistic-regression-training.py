@@ -9,6 +9,8 @@ def train_logistic_regression(X, y, lr=0.1, steps=1000):
     Train logistic regression via gradient descent.
     Return (w, b).
     """
+
+    X, y = np.array(X), np.array(y)
     m, n = X.shape #m: sample size, n: feature size
     w = np.zeros(n)
     b = 0
